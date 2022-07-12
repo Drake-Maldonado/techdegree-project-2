@@ -64,6 +64,17 @@ section img{
     padding:30px 0;
     border-bottom: 1px dashed black;
 }
+#future{
+    padding:30px 0px;
+    border-bottom: 1px dashed black;
+    background: url(https://i.pinimg.com/originals/c9/90/01/c99001b84dcc9c7746a76a78d0dbadb6.jpg) center / cover;
+    color:white;
+    
+}
+#future img{
+    border-radius:50%;
+    
+}
 
 footer p{
     padding:30px 0;
