@@ -4,10 +4,13 @@
 
 }
 body {
+    padding: 0 10px;
     text-align:center;
     background-color:gainsboro;
+    
 }
 header {
+    padding-bottom:30px;
     font-family: 'Lato', sans-serif;
     border-bottom: 1px dashed black;
 }
@@ -19,28 +22,57 @@ header img{
     max-height:200px;
     
 }
+a {
+    color:black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:antiquewhite;
+}
+
 nav ul{
     list-style: none;
     padding-right:40px;
+    
 }
 .hub {
+    padding:5px;
     border: 3px grey solid;
     margin-top:3px;
+    box-shadow:0 3px 2px 1px black;
     background-color:white;
-     
+    background-image:linear-gradient(grey 5%, white 75%);
+    
+ 
 }
+#portfolio{
+    padding:30px 0;
+    border-bottom: 1px dashed black;
+}
+
 section h1 {
     font-family: 'Lato', sans-serif;
 }
 section img{
     max-width:300px;
 }
-.contact{
+#contact{
+    padding:30px 0;
     border-bottom: 1px dashed black;
 }
+
 footer p{
+    padding:30px 0;
     font-family: 'Lato', sans-serif;
     display:inline-block;
+    
+    
+    
+    
     
     
     
