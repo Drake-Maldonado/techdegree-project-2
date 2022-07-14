@@ -82,7 +82,7 @@ footer p{
 
     .container{
         display:flex;
-        height:500px;
+        flex-direction;column;
         justify-content:space-evenly;
        
         
