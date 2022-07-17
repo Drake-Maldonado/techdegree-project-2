@@ -1,54 +1,78 @@
-
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
 body {
-    padding: 0 10px;
-    text-align:center;
+    margin: 0 auto;
+    max-width: 1024px;
     background-color:gainsboro;
-    
-}
-header {
-    padding-bottom:30px;
     font-family: 'Lato', sans-serif;
-    border-bottom: 1px dashed black;
-}
-
-header img{
-    border: 3px grey solid;
-    border-radius: 80%;
-    max-width:300px;
-    max-height:200px;
     
 }
-a {
-    color:black;
+ul{
+    list-style:none;
+    padding-left:0;
 }
 
-a:link{
+a {
     text-decoration: none;
 }
-
 a:hover{
     background-color:antiquewhite;
 }
-
-nav ul{
-    list-style: none;
-    padding-right:40px;
+nav {
     
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+    padding:25px;
+    background-color: gainsboro;
 }
-.hub {
+h1, .top-nav {
+    text-align: center;
+}
+
+.top-nav, .top.nav li {
+    width:100%;
+}
+
+h1 a, .top-nav a {
+    color:black;
+}
+
+.top-nav{
+    margin-top:30px;
+}
+.topnav li{
+    padding:10px 0;
+    margin:5px auto;
+}
+
+.top-nav a{
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.hub{
     padding:5px;
     border: 3px grey solid;
     margin-top:3px;
     box-shadow:0 3px 2px 1px black;
     background-color:white;
     background-image:linear-gradient(grey 5%, white 75%);
-    
+}
+header img{
+    border: 3px grey solid;
+    border-radius: 80%;
+    max-width:300px;
+    max-height:200px;
  
 }
+ 
 #portfolio{
     padding:30px 0;
     border-bottom: 1px dashed black;
+    align-items:center;
 }
 
 section h1 {
@@ -79,26 +103,35 @@ footer p{
     display:inline-block;  
 }
 @media screen and (min-width:768px){
-
-    .container{
-        display:flex;
-        flex-direction;column;
-        justify-content:space-evenly;
-       
-        
-        
-       
-        
-        
-        
-        
-    }
+    .top-nav {
+        margin-top: 0;
+      }
     
-
-
+      .top-nav li {
+        display: inline-block;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+      }
+    
+      .top-nav li:last-child {
+        margin-right: 0;
+      }
+    
+      .top-nav a {
+        color: black;
+      }
 }
 
 @media screen and (min-width:1024px){
-    
-    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .top-nav, 
+      .top-nav li {
+        width: initial;
+        margin-bottom: 0;
+      }
 }
