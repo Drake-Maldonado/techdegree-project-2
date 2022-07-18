@@ -9,6 +9,9 @@ body {
     max-width: 1024px;
     background-color:gainsboro;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     
 }
 ul{
@@ -28,6 +31,9 @@ nav {
     text-align:center;
     padding:25px;
     background-color: gainsboro;
+}
+
+    
 }
 h1, .top-nav {
     text-align: center;
@@ -66,8 +72,10 @@ header img{
     border-radius: 80%;
     max-width:300px;
     max-height:200px;
+    
  
 }
+ 
  
 #portfolio{
     padding:30px 0;
