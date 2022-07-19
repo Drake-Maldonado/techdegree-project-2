@@ -9,10 +9,14 @@ body {
     max-width: 1024px;
     background-color:gainsboro;
     font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
     
+}
+p {
+line-height: 1.5;
+}
+header {
+    padding-bottom:30px;
+    border-bottom: 1px dotted black;
 }
 ul{
     list-style:none;
@@ -34,7 +38,6 @@ nav {
 }
 
     
-}
 h1, .top-nav {
     text-align: center;
 }
@@ -62,54 +65,87 @@ h1 a, .top-nav a {
 .hub{
     padding:5px;
     border: 3px grey solid;
-    margin-top:3px;
+    margin-top:5px;
     box-shadow:0 3px 2px 1px black;
     background-color:white;
     background-image:linear-gradient(grey 5%, white 75%);
 }
-header img{
+.profile{
     border: 3px grey solid;
     border-radius: 80%;
-    max-width:300px;
-    max-height:200px;
-    
- 
+    margin: 5px auto;
+    width:50%;
+    display:block;
+
 }
- 
+p {
+    text-align:center;
+    padding-top:10px;
+}
+.container {
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding:10px;
+       
+}
+ .project{
+    padding:30px 0;
+ }
  
 #portfolio{
-    padding:30px 0;
+    padding:25px 0;
     border-bottom: 1px dashed black;
-    align-items:center;
+    
 }
-
+.project p {
+    margin:5px;
+}
 section h1 {
     font-family: 'Lato', sans-serif;
 }
 section img{
     max-width:300px;
 }
-#contact{
-    padding:30px 0;
-    border-bottom: 1px dashed black;
-}
 #future{
     padding:30px 0px;
     border-bottom: 1px dashed black;
     background: url(https://i.pinimg.com/originals/c9/90/01/c99001b84dcc9c7746a76a78d0dbadb6.jpg) center / cover;
     color:white;
-    
+    text-align: center;
 }
+#future p, #future h2{
+   padding:15px 0;
+}
+
 #future img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border: 3px solid grey;
     border-radius:50%;
     
 }
 
-footer p{
+#contact{
+    text-align:center;
     padding:30px 0;
-    font-family: 'Lato', sans-serif;
-    display:inline-block;  
+    border-bottom: 1px dashed black;
 }
+#contact h2, #contact p{
+    padding:15px 0;
+}
+footer{
+    padding:30px;
+}
+ .footer-container{
+    font-family: 'Lato', sans-serif;
+    display:flex;
+    justify-content:space-evenly;
+ }   
+ 
 @media screen and (min-width:768px){
     .top-nav {
         margin-top: 0;
